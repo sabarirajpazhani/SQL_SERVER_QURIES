@@ -40,3 +40,11 @@ WHERE emp_Gender = 'Female';
 
 SELECT * FROM Employee
 WHERE emp_Salary > 60000;
+
+--AND OPERATOR
+SELECT * FROM Employee 
+WHERE emp_Gender = 'Male' AND emp_Salary >=50000;
+
+--OR OPERATOR
+SELECT * FROM Employee
+WHERE emp_Dept = 'HR' OR emp_Dept = 'Finance';
