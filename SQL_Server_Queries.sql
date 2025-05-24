@@ -52,3 +52,20 @@ WHERE emp_Dept = 'HR' OR emp_Dept = 'Finance';
 --NOT OPERATOR
 SELECT * FROM Employee
 WHERE NOT emp_Gender = 'Male'; 
+
+--LIKE
+SELECT * FROM Employee WHERE emp_Name LIKE 'B%';
+
+--BETWEEN
+SELECT * FROM EMployee 
+WHERE emp_Salary BETWEEN 50000 AND 60000;
+
+--AGGREGATE FUNCTION
+SELECT MIN(emp_Salary)AS MinSalary FROM Employee;
+SELECT MAX(emp_Salary)AS MaxSalary FROM Employee;
+
+SELECT COUNT(*) AS CountOfMale FROM Employee
+WHERE emp_Gender = 'Female';
+
+SELECT SUM(emp_Salary) FROM Employee;
+SELECT AVG(emp_Age) FROM Employee;
